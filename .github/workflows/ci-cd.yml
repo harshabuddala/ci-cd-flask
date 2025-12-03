@@ -1,16 +1,16 @@
-name: docker ci/cd
+name: docker ci-cd
 
 on: 
   push:
     branches: [ "main" ]
 
 jobs:
-    build and run:
+    build-and-run:
         runs-on: ubuntu-latest # starts a ubuntu image which called as runner
 
         steps:
           - name : Checkout code #copys the github code
-            uses: action/checkout@v4
+            uses: action/checkout@v3
 
           - name: Deploy over SSH and rebuild on server
             uses: appleboy/ssh-action@v1.0.0
