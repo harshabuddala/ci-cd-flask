@@ -30,4 +30,4 @@ jobs:
             docker rm flask-app || true
 
             # Run the new container
-            docker run -d -p 5050:3000 --name flask-app flask-app:v2
+            docker run -d -p 5060:5000 --name flask-app flask-app:v2
