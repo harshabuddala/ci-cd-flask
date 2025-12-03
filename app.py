@@ -10,7 +10,7 @@ def index():
 
 @app.route('/api/hello')
 def api_hello():
-    return {'message': 'Hello from 5_project'}
+    return {'message': 'Hello from github test 5_project'}
 
 
 if __name__ == '__main__':
